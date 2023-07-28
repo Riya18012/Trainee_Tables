@@ -9,6 +9,7 @@ Entities:
 6.	Payment
 7.	Certificate
 
+
 Attributes:
 1.	Trainee: 
 1.	Trainee_id            {primary key}
@@ -22,6 +23,7 @@ Attributes:
 9.	Date of birth
 10.	College/school
 
+
 2.	Courses:
 a.	course_id    pk
 b.	course_name
@@ -32,7 +34,8 @@ f.	EndDate
 g.	TrainerID    fk
 h.	Status     The status of course (e.g., upcoming, ongoing, completed, canceled).
 i.	fee
-	
+
+ 
 4.	Trainer
 1.	TrainerID  pk
 2.	Name:
@@ -42,6 +45,8 @@ i.	fee
 6.	Email
 7.	Address          
 8.	Designation
+
+   
 4.	Batch:
 1.	BatchID pk
 2.	CourseID  fk 
@@ -52,6 +57,7 @@ i.	fee
 7.	Capacity
 8.	EnrolledTrainees:
 9.	Status   The status of the batch (e.g., upcoming, ongoing, completed, cancelled).
+
 
 5.	Enrolments:
 1.	EnrollmentID   pk
@@ -64,6 +70,7 @@ i.	fee
 8.	CertificateIssued (true or false)
 9.	CertificateID:    fk
 
+
 6.	Payment:
 1.	Paymentid     pk
 2.	Traineeid     fk
@@ -72,6 +79,7 @@ i.	fee
 5.	Payment amount
 6.	Payment method
 7.	Payment status
+
 
 7.	certificate
 1.	CertificateID pk
